@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brasa Burger — Cardápio</title>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="wrap nav">
+    <a href="#topo" class="logo">Brasa<span>Burger</span></a>
+    <button class="burger-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav class="links" id="links">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Horários</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<main id="topo">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Hambúrguer <em>na brasa</em>, do jeito certo.</h1>
+      <p>Carne de 180 g grelhada na hora, pão de batata macio e molhos feitos aqui. Escolha seu favorito e monte o pedido.</p>
+      <a class="btn" href="#cardapio">Ver cardápio</a>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="stack">
+        <div class="bun-top"></div><div class="lettuce"></div><div class="tomato"></div>
+        <div class="cheese"></div><div class="patty"></div><div class="bun-bot"></div>
+      </div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30C240 70 480 0 720 25s480 45 720 5v30H0z"/></svg>
+</div>
+
+<!-- ===== CARDÁPIO ===== -->
+<section id="cardapio">
+  <div class="wrap">
+    <div class="title reveal">
+      <h2>Nosso cardápio</h2>
+      <p>Toque em + para adicionar ao pedido.</p>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ===== HORÁRIOS ===== -->
+<section class="about" id="sobre">
+  <div class="wrap">
+    <div class="box reveal"><h3>Horários</h3>
+      <ul><li>Seg a Qui<span>18h – 23h</span></li><li>Sex e Sáb<span>18h – 01h</span></li><li>Domingo<span>17h – 23h</span></li></ul></div>
+    <div class="box reveal"><h3>Como fazemos</h3>
+      <p>Blend próprio, grelhado na brasa e montado na hora. Todos os molhos são feitos na casa, todos os dias.</p></div>
+    <div class="box reveal" id="contato"><h3>Contato</h3>
+      <ul><li>Telefone<span>(11) 4002-8922</span></li><li>Entrega<span>até 5 km</span></li><li>Instagram<span>@brasaburger</span></li></ul></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Brasa Burger. Feito com fogo e carinho.</div></footer>
+
+<!-- ===== CARRINHO E AVISO ===== -->
+<div class="cart" id="cart" aria-live="polite">Pedido <b id="count">0</b> <span id="total">R$ 0,00</span></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
